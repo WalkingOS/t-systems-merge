@@ -1,10 +1,10 @@
 import * as React from "react";
-import DatePickerM from "../DatePicker";
+import DatePicker from "../DatePicker";
 
 export default (
-  <DatePickerM 
+  <DatePicker 
     uxpId="DatePicker-1" 
-    label="Small" 
+    label="Smallssss" 
     size="small" 
     value="2020-12-31"
     helperText="Make sure to fill this"

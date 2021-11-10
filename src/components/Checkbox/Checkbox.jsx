@@ -1,20 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-import reactifyWc from "reactify-wc";
-// import { ScaleCheckbox } from "@telekom/scale-components-react";
+import { ScaleCheckbox } from "@telekom/scale-components-react";
 
-const ScaleCheckbox = reactifyWc('scale-checkbox');
-
-
-function CheckboxM(props) {
+function Checkbox(props) {
     return (
       <ScaleCheckbox {...props} />
     )
   }
 
-CheckboxM.propTypes = {
+  Checkbox.propTypes = {
 /**
- * (optional) Active swi tch
+ * (optional) Active switch
  */
 checked: PropTypes.bool,
 
@@ -34,4 +30,4 @@ helperText: PropTypes.string,
 label: PropTypes.string
 }
 
-export { CheckboxM as default }
+export { Checkbox as default }

@@ -1,36 +1,33 @@
 import React from "react";
 import PropTypes from "prop-types";
-import reactifyWc from "reactify-wc";
+import { ScaleLoadingSpinner } from "@telekom/scale-components-react";
 
-const ScaleSpinner = reactifyWc('scale-loading-spinner');
-
-function LoadingSpinnerM(props) {
-    return (
-      <ScaleSpinner {...props}></ScaleSpinner>
-
-    )
-  }
-
-LoadingSpinnerM.propTypes = {
-/**
- * Works
- */
-variant: PropTypes.oneOf(['white', 'primary']),
-
-/**
- * Works
- */
-size: PropTypes.oneOf(['small', 'large']),
-
-/**
- * Works
- */
-alignment: PropTypes.oneOf(['horizontal', 'vertical']),
-
-/**
- * Works
- */
-text: PropTypes.string,
+function LoadingSpinner(props) {
+  return (
+    <ScaleLoadingSpinner {...props}></ScaleLoadingSpinner>
+  )
 }
 
-export { LoadingSpinnerM as default }
+LoadingSpinner.propTypes = {
+  /**
+   * Works
+   */
+  variant: PropTypes.oneOf(['white', 'primary']),
+
+  /**
+   * Works
+   */
+  size: PropTypes.oneOf(['small', 'large']),
+
+  /**
+   * Works
+   */
+  alignment: PropTypes.oneOf(['horizontal', 'vertical']),
+
+  /**
+   * Works
+   */
+  text: PropTypes.string,
+}
+
+export { LoadingSpinner as default }

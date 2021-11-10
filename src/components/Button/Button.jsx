@@ -5,54 +5,51 @@ import { ScaleButton } from "@telekom/scale-components-react";
 const ScaleIconActionFavorite = reactifyWc('scale-icon-action-favorite');
 const ScaleIconActionAdd = reactifyWc('scale-icon-action-add');
 
-/**
- * @uxpinwrappers
- * SkipContainerWrapper
- */
-function ButtonM(props) {
-  const { uxpinRef, ...other } = props;
+function Button(props) {
   return (
-    <ScaleButton {...other} ref={uxpinRef}>
+    <ScaleButton {...props} >
       {props.children}
     </ScaleButton>
   );
 }
 
-ButtonM.propTypes = {
-/**
- * children.
- *
- */
- children: PropTypes.node,
+Button.propTypes = {
+  /**
+   * children.
+   *
+   */
+  children: PropTypes.node,
+  /**
+   * (optional) Button type.
+   */
+  type: PropTypes.oneOf(["button", "reset", "submit"]),
 
-/**
- * (optional) If true, the button is disabled.
- */
- disabled: PropTypes.bool,
+  variant: PropTypes.oneOf(["primary", "secondary", "ghost"]),
+  /**
+   * (optional) The size of the button.
+   */
+  size: PropTypes.oneOf(["large", "small"]),
 
-/**
- * (optional) Set to true when the button contains only an icon.
- */
- iconOnly: PropTypes.bool,
-
- startIcon: PropTypes.bool,
-
-/**
+  /**
  * (optional) Icon position related to the label.
  */
- iconPosition: PropTypes.oneOf(["after", "before"]),
+  iconPosition: PropTypes.oneOf(["after", "before"]),
+  /**
+   * (optional) If true, the button is disabled.
+   */
+  disabled: PropTypes.bool,
 
-/**
- * (optional) The size of the button.
- */
- size: PropTypes.oneOf(["large", "small"]),
+  /**
+   * (optional) Set to true when the button contains only an icon.
+   */
+  iconOnly: PropTypes.bool,
 
-/**
- * (optional) Button type.
- */
- type:PropTypes.oneOf(["button", "reset", "submit"]),
+  startIcon: PropTypes.bool,
 
- variant: PropTypes.oneOf(["primary", "secondary", "ghost"]),
+
+
+
+
 };
 
-export { ButtonM as default };
+export { Button as default };

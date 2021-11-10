@@ -1,6 +1,6 @@
 import * as React from "react";
-import SwitchM from "../Switch";
+import Switch from "../Switch";
 
 export default (
-  <SwitchM uxpId="Switch-1" checked label="Selected" />
+  <Switch uxpId="Switch-1" checked label="Selected" />
 );

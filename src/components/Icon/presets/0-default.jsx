@@ -1,8 +1,8 @@
 import * as React from "react";
-import IconM from "../Icon";
+import Icon from "../Icon";
 
 export default (
-  <IconM 
+  <Icon 
     uxpId="Icon-1" 
     icon="add"
     fill="red"

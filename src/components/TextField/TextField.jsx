@@ -1,16 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import reactifyWc from "reactify-wc";
+import { ScaleTextField} from "@telekom/scale-components-react";
 
-const ScaleTextField = reactifyWc('scale-text-field');
 
-function TextFieldM(props) {
+function TextField(props) {
   return (
     <ScaleTextField {...props} />
   )
 }
 
-TextFieldM.propTypes = {
+TextField.propTypes = {
 /**
  * Works
  * @uxpinpropname Text Value
@@ -78,4 +77,4 @@ maxLength: PropTypes.number,
 minLength: PropTypes.number,
 }
 
-export { TextFieldM as default }
+export { TextField as default }

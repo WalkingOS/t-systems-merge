@@ -1,12 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import reactifyWc from "reactify-wc";
-// import { ScaleRatingStars } from "@telekom/scale-components-react";
-
-const ScaleRatingStars = reactifyWc('scale-rating-stars');
+import { ScaleRatingStars } from "@telekom/scale-components-react";
 
 
-function RatingStarsM(props) {
+
+function RatingStars(props) {
   return (
     <ScaleRatingStars {...props}>
       {props.children}
@@ -14,7 +12,7 @@ function RatingStarsM(props) {
   );
 }
 
-RatingStarsM.propTypes = {
+RatingStars.propTypes = {
 /**
  * Works
  */
@@ -67,4 +65,4 @@ hideLabel: PropTypes.bool,
 
 };
 
-export { RatingStarsM as default };
+export { RatingStars as default };

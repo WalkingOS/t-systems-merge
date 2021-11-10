@@ -1,17 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import reactifyWc from "reactify-wc";
-// import { ScaleSwitch } from "@telekom/scale-components-react";
+import { ScaleSwitch } from "@telekom/scale-components-react";
 
-const ScaleSwitch = reactifyWc('scale-switch');
-
-function SwitchM(props) {
+function Switch(props) {
     return (
       <ScaleSwitch {...props} />
     )
   }
 
-SwitchM.propTypes = {
+  Switch.propTypes = {
 /**
  * Works
  */
@@ -38,4 +35,4 @@ name: PropTypes.string,
 label: PropTypes.string
 }
 
-export { SwitchM as default }
+export { Switch as default }

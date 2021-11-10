@@ -1,19 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import reactifyWc from "reactify-wc";
+import { ScaleDatePicker } from "@telekom/scale-components-react";
 
-const ScaleDatePicker = reactifyWc('scale-date-picker');
-
-function DatePickerM(props) {
+function DatePicker(props) {
   return (
-    <ScaleDatePicker 
-      {...props}
-    // helperText="Make sure to fill this" label="Helper Text" value="2020-12-31"
-    ></ScaleDatePicker>
+    <ScaleDatePicker {...props}></ScaleDatePicker>
   )
 }
 
-DatePickerM.propTypes = {
+DatePicker.propTypes = {
   /**
    * Works
    */
@@ -114,4 +109,4 @@ DatePickerM.propTypes = {
   popupTitle: PropTypes.string,
 }  
 
-export { DatePickerM as default }
+export { DatePicker as default }

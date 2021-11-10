@@ -1,6 +1,6 @@
 import * as React from "react";
-import ButtonM from "../Button";
+import Button from "../Button";
 
 export default (
-  <ButtonM uxpId="button">Let's Merge!</ButtonM>
+  <Button uxpId="button">Let's Merge!</Button>
 );

@@ -1,12 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import reactifyWc from "reactify-wc";
 
-const ScaleIconActionFavorite = reactifyWc('scale-icon-action-favorite');
-const ScaleIconActionAdd = reactifyWc('scale-icon-action-add');
-const ScaleIconActionClose = reactifyWc('scale-icon-action-close')
+import { ScaleIconActionClose } from "@telekom/scale-components-react";
+import { ScaleIconActionAdd } from "@telekom/scale-components-react";
+import { ScaleIconActionFavorite } from "@telekom/scale-components-react";
 
-function IconM(props) {
+function Icon(props) {
   let icons = props.icon;
   let comp;
 
@@ -27,7 +26,7 @@ function IconM(props) {
     )
   }
 
-IconM.propTypes = {
+  Icon.propTypes = {
 /**
  * Works
  */
@@ -52,4 +51,4 @@ accessibilityTitle: PropTypes.string,
 focusable: PropTypes.bool,
 }
 
-export { IconM as default }
+export { Icon as default }

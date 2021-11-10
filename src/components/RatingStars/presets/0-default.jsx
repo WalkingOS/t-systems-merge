@@ -1,6 +1,6 @@
 import * as React from "react";
-import RatingStarsM from "../RatingStars";
+import RatingStars from "../RatingStars";
 
 export default (
-<scale-rating-stars uxpId="rating-stars-1" rating="3" info-text="Info Text" label="Custom Rating Label"></scale-rating-stars>
+<RatingStars uxpId="rating-stars-1" rating="3" infoText="Info Text" label="Custom Rating Label"></RatingStars>
 );
